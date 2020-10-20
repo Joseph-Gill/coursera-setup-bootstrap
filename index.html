@@ -6,7 +6,6 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css">
@@ -14,7 +13,6 @@
     <link rel="stylesheet" href="css/styles.css">
     <title>Ristorante Con Fusion</title>
 </head>
-
 <body>
 <nav class="navbar navbar-dark navbar-expand-sm fixed-top">
     <div class="container">
@@ -44,13 +42,15 @@
                 <p>We take inspiration from the World's best cuisines, and create a unique fusion experience. Our
                     lipsmacking creations will tickle your culinary senses!</p>
             </div>
-            <div class="col-12 col-sm align-self-center">
+            <div class="col-12 col-sm-3 align-self-center">
                 <img src="img/logo.png" class="img-fluid" alt="logo">
+            </div>
+            <div class="col-12 col-sm-3 align-self-center">
+                <a href="#reserve-table" class="btn btn-warning btn-block" role="button">Reserve Table</a>
             </div>
         </div>
     </div>
 </header>
-
 <div class="container">
     <div class="row row-content align-items-center">
         <div class="col-12 col-sm-4 order-sm-last col-md-3">
@@ -60,7 +60,8 @@
             <div class="media">
                 <img class="d-flex mr-3 img-thumbnail align-self-center" src="img/uthappizza.png" alt="uthappizza">
                 <div class="media-body">
-                    <h2 class="mt-0">Uthappizza <span class="badge badge-danger">HOT</span> <span class="badge badge-pill badge-secondary">$4.99</span></h2>
+                    <h2 class="mt-0">Uthappizza <span class="badge badge-danger">HOT</span> <span
+                            class="badge badge-pill badge-secondary">$4.99</span></h2>
                     <p class="d-none d-sm-block">A unique combination of Indian Uthappam (pancake) and Italian pizza,
                         topped with Cerignola
                         olives,
@@ -70,21 +71,26 @@
             </div>
         </div>
     </div>
-
-
     <div class="row row-content align-items-center">
-        <div class="col-12 col-sm-4 col-md-3">
+        <div class="col-12 col-sm-4 col-md-3 order-sm-first">
             <h3>This Month's Promotions</h3>
         </div>
-        <div class="col col-sm col-md">
-            <h2>Weekend Grand Buffet</h2>
-            <p class="d-none d-sm-block">Featuring mouthwatering combinations with a choice of five different salads,
-                six enticing appetizers, six
-                main entrees and five choicest desserts. Free flowing bubbly and soft drinks. All for just $19.99 per
-                person </p>
+        <div class="col col-sm col-md order-sm-last">
+            <div class="media">
+                <div class="media-body">
+                    <h2 class="mt-0">Weekend Grand Buffet <span class="badge badge-danger">NEW</span></h2>
+                    <p class="d-none d-sm-block">Featuring mouthwatering combinations with a choice of five different
+                        salads,
+                        six enticing appetizers, six
+                        main entrees and five choicest desserts. Free flowing bubbly and soft drinks. All for just
+                        $19.99
+                        per
+                        person </p>
+                </div>
+                <img class="d-flex ml-3 img-thumbnail align-self-center" src="img/buffet.png" alt="buffet">
+            </div>
         </div>
     </div>
-
     <div class="row row-content align-items-center">
         <div class="col-12 col-sm-4 order-sm-last col-md-3">
             <h3>Meet our Culinary Specialists</h3>
@@ -104,8 +110,70 @@
             </div>
         </div>
     </div>
+    <div class="row row-content align-items-center">
+        <div class="col-12 col-sm-2">
+        </div>
+        <div class="col-12 col-sm-8">
+            <div class="card">
+                <h3 class="card-header text-white bg-warning">Reserve a Table</h3>
+                <div class="card-body">
+                    <form id="reserve-table">
+                        <div class="form-group row">
+                            <label for="guests" class="col-12 col-sm-2 col-form-label">Number of
+                                Guests</label>
+                            <div class="col-12 col-sm-9" id="guests">
+                                <div class="custom-control custom-radio custom-control-inline">
+                                    <input type="radio" class="custom-control-input" id="1" value="1" name="guests">
+                                    <label class="custom-control-label" for="1">1</label>
+                                </div>
+                                <div class="custom-control custom-radio custom-control-inline">
+                                    <input type="radio" class="custom-control-input" id="2" value="2" name="guests">
+                                    <label class="custom-control-label" for="2">2</label>
+                                </div>
+                                <div class="custom-control custom-radio custom-control-inline">
+                                    <input type="radio" class="custom-control-input" id="3" value="3" name="guests">
+                                    <label class="custom-control-label" for="3">3</label>
+                                </div>
+                                <div class="custom-control custom-radio custom-control-inline">
+                                    <input type="radio" class="custom-control-input" id="4" value="4" name="guests">
+                                    <label class="custom-control-label" for="4">4</label>
+                                </div>
+                                <div class="custom-control custom-radio custom-control-inline">
+                                    <input type="radio" class="custom-control-input" id="5" value="5" name="guests">
+                                    <label class="custom-control-label" for="5">5</label>
+                                </div>
+                                <div class="custom-control custom-radio custom-control-inline">
+                                    <input type="radio" class="custom-control-input" id="6" value="6" name="guests">
+                                    <label class="custom-control-label" for="6">6</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label for="date" class="col-12 col-sm-2 col-form-label">Date and Time</label>
+                            <div class="col-12 col-sm-4">
+                                <input type="date" class="form-control" id="date" name="date"
+                                       placeholder="Date">
+                            </div>
+                            <div class="col-12 col-sm-4">
+                                <input type="time" class="form-control" id="time" name="time"
+                                       placeholder="Time">
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <div class="offset-sm-2 col-md-10">
+                                <button type="submit" class="btn btn-primary">
+                                    Reserve
+                                </button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="col-12 col-sm-2">
+        </div>
+    </div>
 </div>
-
 <footer class="footer">
     <div class="container">
         <div class="row">
@@ -152,11 +220,9 @@
         </div>
     </div>
 </footer>
-
 <!-- jQuery first, then Popper.js, then Bootstrap JS. -->
 <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
 <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
 <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
 </body>
-
 </html>
